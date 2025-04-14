@@ -28,3 +28,7 @@ javac *.java
 ```
 java App
 ```
+
+## external libraries
+
+The drawing java file can be found at : https://github.com/fracpete/princeton-java-introduction/tree/master/stdlib/src/main/java/edu/princeton/cs/introcs
