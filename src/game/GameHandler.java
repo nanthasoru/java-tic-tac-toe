@@ -1,7 +1,5 @@
 package game;
 
-import javax.swing.JFrame;
-
 import game.players.*;
 
 public class GameHandler {
@@ -9,12 +7,10 @@ public class GameHandler {
     public final static int PvP = 0, PvE = 1;
     
     private final TicTacToe game;
-    private final int gamemode;
     private final Player player1, player2;
 
     public GameHandler(int gamemode)
     {
-        this.gamemode = gamemode;
         this.game = new TicTacToe(gamemode);
 
         if (gamemode == PvP)

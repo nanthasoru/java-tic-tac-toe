@@ -3,8 +3,6 @@ package game;
 import java.util.ArrayList;
 import java.util.Stack;
 
-import game.players.*;
-
 public class TicTacToe {
 
     private final Boolean[] grid;
