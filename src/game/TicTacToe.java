@@ -3,13 +3,15 @@ package game;
 import java.util.ArrayList;
 import java.util.Stack;
 
+import game.players.*;
+
 public class TicTacToe {
 
     private final Boolean[] grid;
     private boolean isP2turn;
     private Stack<Integer> moveHistory;
 
-    public TicTacToe()
+    public TicTacToe(int gamemode)
     {
         this.grid = new Boolean[9];
         this.isP2turn = false;
@@ -43,11 +45,6 @@ public class TicTacToe {
         }
 
         return free;
-    }
-
-    public void playAt(Coordinate c)
-    {
-        playAt(c.ordinal());
     }
 
     public void playAt(int i)

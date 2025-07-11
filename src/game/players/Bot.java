@@ -1,19 +1,15 @@
-package game;
+package game.players;
 
-public class Bot {
+import game.TicTacToe;
 
-    private final TicTacToe game;
+public final class Bot extends Player {
 
-    public Bot() {
-        game = new TicTacToe();
+    public Bot(TicTacToe game) {
+        super(game);
     }
 
-    public TicTacToe getGame() {
-        return game;
-    }
-
-    public void play()
-    {
+    @Override
+    public void play() {
         game.playAt(chooseCoordinate());
     }
 
